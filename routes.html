@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺灣新睿交通股份有限公司 - 路線查詢</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>臺灣新睿交通股份有限公司</h1>
+        <p>提供您安全、便捷、智慧的公共運輸服務</p>
+    </header>
+
+    <nav>
+        <a href="index.html">公司簡介</a>
+        <a href="routes.html">路線查詢</a>
+        <a href="news.html">最新消息</a>
+        <a href="contact.html">聯絡我們</a>
+    </nav>
+
+    <div class="container">
+        <h2>🚌 營運路線概覽</h2>
+        <p style="text-align: center;">點擊路線編號查看路線資訊 (部分路線有路線圖，敬請期待)</p>
+
+        <h3>🚌 一般路線</h3>
+        <ul class="route-list">
+            <li onclick="showRouteInfo('5', ' 中港-成福宮')"><strong>5</strong><small>中港-成福宮</small></li>
+            <li onclick="showRouteInfo('88', '重陽路-台北車站(青島)')"><strong>88</strong><small>重陽路-台北車站(青島)</small></li>
+            <li onclick="showRouteInfo('88區', '南港花園社區(松商站)↔台北車站(青島)')"><strong>88區</strong><small>南港花園社區(松商站)↔台北車站(青島)</small></li>
+            <li onclick="showRouteInfo('207環線', '行一 - 行一')"><strong>207環線</strong><small>行一 - 行一</small></li>
+            <li onclick="showRouteInfo('212', '新莊站-同興公園')"><strong>212</strong><small>新莊站-同興公園</small></li>
+            <li onclick="showRouteInfo('257正', '新莊站-南港花園社區(松商站)')"><strong>257正</strong><small>新莊站-南港花園社區(松商站)</small></li>
+            <li onclick="showRouteInfo('257副', '新莊站-南港花園社區(松商站)')"><strong>257副</strong><small>新莊站-南港花園社區(松商站)</small></li>
+            <li onclick="showRouteInfo('257區', '新莊站-國父紀念館')"><strong>257區</strong><small>新莊站-國父紀念館</small></li>
+            <li onclick="showRouteInfo('261', '中港站-台大醫院')"><strong>261</strong><small>中港站-台大醫院</small></li>
+            <li onclick="showRouteInfo('288', '台北車站-遊樂園(中港站)')"><strong>288</strong><small>台北車站-遊樂園(中港站)</small></li>
+            <li onclick="showRouteInfo('299', '松德站-中港站')"><strong>299</strong><small>松德站-中港站</small></li>
+            <li onclick="showRouteInfo('508', '泰山公有市場-松商站')"><strong>508</strong><small>泰山公有市場-松商站</small></li>
+            <li onclick="showRouteInfo('811', '中港站-聯合醫院中興院區')"><strong>811</strong><small>中港站-聯合醫院中興院區</small></li>
+        </ul>
+        
+        <h3>🚌 幹線路線</h3>
+        <ul class="route-list">
+            <li onclick="showRouteInfo('南京幹線', '內湖（瑞湖街口)-行一')"><strong>南京幹線</strong><small>內湖（瑞湖街口)-行一</small></li>
+            <li onclick="showRouteInfo('仁愛幹線', '台北車站(鄭州)-南港花園社區')"><strong>仁愛幹線</strong><small>台北車站(鄭州)-南港花園社區</small></li>
+            <li onclick="showRouteInfo('信義幹線', '台北車站(忠孝)-重陽路(南港花園社區)')"><strong>信義幹線</strong><small>台北車站(忠孝)-重陽路(南港花園社區)</small></li>
+            <li onclick="showRouteInfo('東環幹線', '松德站-捷運劍南站')"><strong>東環幹線</strong><small>松德站-捷運劍南站</small></li>
+        </ul>
+        
+        <h3>🚌 捷運藍線接駁路線</h3>
+        <ul class="route-list">
+            <li onclick="showRouteInfo('藍2', '新莊站-台大醫院')"><strong>藍2</strong><small>新莊站-台大醫院</small></li>
+            <li onclick="showRouteInfo('藍25', '捷運坤陽站-忠孝國小（少數趟次延駛台北車站）')"><strong>藍25</strong><small>捷運坤陽站-忠孝國小（少數趟次延駛台北車站）</small></li>
+            <li onclick="showRouteInfo('藍27', '行一-捷運市政府站')"><strong>藍27</strong><small>行一-捷運市政府站</small></li>
+        </ul>
+        
+        <h3>🚌 快速客運路線</h3>
+        <ul class="route-list">
+            <li onclick="showRouteInfo('1205', '中港站-松德站(本公司行駛平日班次，台灣運輸公車行駛假日班次)')"><strong>1205</strong><small>中港站-松德站</small></li>
+            <li onclick="showRouteInfo('2088', '松德站-捷運昆陽站2')"><strong>2088</strong><small>松德站-捷運昆陽站2</small></li>
+            <li onclick="showRouteInfo('2088A', '松德站-捷運昆陽站2')"><strong>2088A</strong><small>松德站-捷運昆陽站2</small></li>
+        </ul>
+        
+        <h3>🚌 通勤路線</h3>
+        <ul class="route-list">
+            <li onclick="showRouteInfo('通勤27', '中港站-總統府')"><strong>通勤27</strong><small>中港站-總統府</small></li>
+        </ul>
+        
+        <h3>🚌 內科路線</h3>
+        <ul class="route-list">
+            <li onclick="showRouteInfo('內科南軟雙園巴士', '重陽路-行一')"><strong>內科南軟雙園巴士</strong><small>重陽路-行一</small></li>
+            <li onclick="showRouteInfo('內科線', '松商站-行一')"><strong>內科線</strong><small>松商站-行一</small></li>
+        </ul>
+        
+        <h3>🚌 其他路線</h3>
+        <ul class="route-list">
+            <li onclick="showRouteInfo('學生專車', '規劃中')"><strong>學生專車</strong><small>規劃中</small></li>
+            <li onclick="showRouteInfo('巡電先導公車', '松商站-行一')"><strong>巡電先導公車</strong><small>松商站-行一</small></li>
+        </ul>
+        
+        <p style="text-align: center; margin-top: 30px; font-weight: bold; color: #cc3300;">
+            如需即時動態與詳細站點資訊，請洽詢本公司DC。
+        </p>
+    </div>
+
+    <footer>
+        &copy; 2026 臺灣新睿交通股份有限公司版權所有。
+    </footer>
+
+    <div id="routeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modalRouteTitle"></h3>
+            <p id="modalRouteDetail"></p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript 程式碼
+        function showRouteInfo(route, detail) {
+            document.getElementById('modalRouteTitle').innerText = '路線 ' + route;
+            document.getElementById('modalRouteDetail').innerText = '起訖點：' + detail;
+            document.getElementById('routeModal').style.display = 'block';
+        }
+        function closeModal() {
+            // 注意: 將 closeModal 裡的 modal ID 改回 routeModal
+            document.getElementById('routeModal').style.display = 'none';
+        }
+        // 點擊彈窗以外區域關閉
+        window.onclick = function(event) {
+            const modal = document.getElementById('routeModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

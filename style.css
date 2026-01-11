@@ -1,0 +1,180 @@
+/* style.css - V2 美化與現代化版本 */
+
+/* --- 基礎設定與字體 --- */
+body {
+    font-family: '微軟正黑體', 'Microsoft JhengHei', 'PingFang TC', 'Apple LiGothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f4f8; /* 柔和的淺灰色背景 */
+    line-height: 1.6;
+}
+
+/* --- Header 標頭區 --- */
+header {
+    background: linear-gradient(90deg, #003366 0%, #004d99 100%); /* 藍色漸變 */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 更深的陰影 */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-top: 5px;
+    opacity: 0.9;
+}
+
+/* --- Nav 導覽列 --- */
+nav {
+    background-color: #002244; /* 與 Header 搭配的更深色調 */
+    text-align: center;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px; /* 增加點擊區域 */
+    margin: 0;
+    display: inline-block;
+    transition: background-color 0.4s ease, transform 0.2s; /* 增加過渡效果 */
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #0066cc; /* 懸停效果 */
+    transform: translateY(-2px); /* 輕微上浮效果 */
+}
+
+/* --- 內容容器 --- */
+.container {
+    width: 90%;
+    max-width: 1100px; /* 內容區略寬 */
+    margin: 30px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px; /* 更圓潤的邊角 */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* 柔和的浮動效果 */
+}
+
+/* --- 標題 --- */
+h2 {
+    color: #004d99;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #e0eaf3; /* 更現代化的底部線 */
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h3 {
+    color: #004d99;
+    border-left: 5px solid #00aaff;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* --- 內文區塊 --- */
+p {
+    font-size: 1.05em;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* --- 路線列表元件 (routes.html) --- */
+.route-list {
+    list-style: none;
+    padding: 0;
+    /* 調整為 Grid 佈局，使路線卡片更整齊 */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.route-list li {
+    /* 卡片化設計 */
+    background-color: #f8ffff;
+    color: #003366;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #cce0ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* 輕微陰影 */
+}
+
+.route-list li:hover {
+    background-color: #cce0ff;
+    transform: scale(1.05); /* 放大效果 */
+    box-shadow: 0 4px 15px rgba(0, 77, 153, 0.2);
+}
+
+/* 路線列表中的小標籤 */
+.route-list li small {
+    display: block;
+    font-weight: normal;
+    font-size: 0.85em;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* --- 聯絡資訊 (contact.html) --- */
+.contact-info p {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 15px 0;
+}
+
+.contact-info strong {
+    color: #004d99;
+}
+
+/* --- Footer 頁腳 --- */
+footer {
+    background-color: #222;
+    color: #bbb;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+
+/* --- 彈出視窗 (Modal) 樣式保持不變，或稍微美化 --- */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 往上移一點 */
+    padding: 30px;
+    border: none;
+    width: 80%;
+    max-width: 450px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h3 {
+    color: #004d99;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border: none;
+}
